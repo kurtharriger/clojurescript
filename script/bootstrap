@@ -31,12 +31,9 @@ unzip -qu compiler-latest.zip
 echo "Cleaning up Google Closure compiler archive..."
 rm compiler-latest.zip
 cd ../..
-
-
-# echo "Building lib/goog.jar..."
-# echo "jar cf ./lib/goog.jar -C closure/library/closure/ goog"
-# jar cf ./lib/goog.jar -C closure/library/closure/ goog
-curl -s  https://raw.github.com/davesann/clojurescript-goog-jar/master/goog-with-third-party-r1376.jar > ./lib/goog.jar
+echo "Building lib/goog.jar..."
+echo "jar cf ./lib/goog.jar -C closure/library/closure/ goog"
+jar cf ./lib/goog.jar -C closure/library/closure/ goog
 
 echo "Fetching Rhino..."
 curl -O -s http://ftp.mozilla.org/pub/mozilla.org/js/rhino1_7R3.zip
