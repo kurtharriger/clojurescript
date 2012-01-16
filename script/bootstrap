@@ -17,10 +17,10 @@ rm clojure-1.3.0.zip
 echo "Fetching Google Closure library..."
 mkdir -p closure/library
 cd closure/library
-curl -O -s http://closure-library.googlecode.com/files/closure-library-20110323-r790.zip
-unzip -qu closure-library-20110323-r790.zip
+curl -O -s http://closure-library.googlecode.com/files/closure-library-20111110-r1376.zip
+unzip -qu closure-library-20111110-r1376.zip
 echo "Cleaning up Google Closure library archive..."
-rm closure-library-20110323-r790.zip
+rm closure-library-20111110-r1376.zip
 cd ..
 
 echo "Fetching Google Closure compiler..."
